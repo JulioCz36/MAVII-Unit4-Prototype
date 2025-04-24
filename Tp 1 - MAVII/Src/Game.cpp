@@ -151,7 +151,7 @@ void Game::DoEvents()
 
     float angle = atan2(dy, dx); 
 
-    b2Vec2 offsetCanon(cos(angle) * 4.f, sin(angle) * 3.0f);
+    b2Vec2 offsetCanon(cos(angle) * 4.f, sin(angle) * 4.0f);
     b2Vec2 posCanon = pivotPos + offsetCanon;
 
     canonBody->SetTransform(posCanon, angle);

@@ -1,7 +1,2 @@
-﻿  Box2dEmptyApp.cpp
-  Game.cpp
-  SFMLRenderer.cpp
-C:\Users\JulioCZ\Documents\2 - Cuatri_1\MAVII\U4\TP Unidad 4\Tp 1 - MAVII\Src\SFMLRenderer.cpp(118,25): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\JulioCZ\Documents\2 - Cuatri_1\MAVII\U4\TP Unidad 4\Tp 1 - MAVII\Src\SFMLRenderer.cpp(118,22): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-  Generando código...
+﻿  Game.cpp
   Box2dEmptyApp.vcxproj -> C:\Users\JulioCZ\Documents\2 - Cuatri_1\MAVII\U4\TP Unidad 4\Tp 1 - MAVII\Bin\Debug\Box2dEmptyApp.exe
