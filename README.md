@@ -32,6 +32,6 @@ Referencia http://www.kongregate.com/games/johnny_k/ragdoll-cannon-3
 
 ## 👨‍💻 Autor
 
-JulioCZ  
+**JulioCZ**  
 1° Cuatrimestre – Año 2025  
 Tecnicatura en Diseño y Programación de Videojuegos
