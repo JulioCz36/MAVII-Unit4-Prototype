@@ -12,6 +12,8 @@ Game::Game(int ancho, int alto, std::string titulo)
     frameTime = 1.0f / fps;
     SetZoom(); // vista del juego
     InitPhysics(); // motor de física
+
+    canon = new Canon(phyWorld, wnd);
 }
 
 void Game::Loop()
@@ -32,6 +34,18 @@ void Game::UpdatePhysics()
     phyWorld->Step(frameTime, 8, 8); // Simular el mundo físico
     phyWorld->ClearForces(); // Limpiar las fuerzas 
     phyWorld->DebugDraw(); // Dibujar el mundo
+
+    Vector2i mousePosPixel = Mouse::getPosition(*wnd);
+    Vector2f mouseWorld = wnd->mapPixelToCoords(mousePosPixel);
+
+    b2Vec2 pivot = canon->getPivote();
+
+    float dx = mouseWorld.x - pivot.x;
+    float dy = mouseWorld.y - pivot.y;
+    float angle = atan2(dy, dx);
+
+    // Actualizar ángulo del cañón
+    canon->actualizar(angle);
 }
 
 void Game::DrawGame()
@@ -60,107 +74,14 @@ void Game::DrawGame()
     paredDer.setPosition(97.5f, 0);
     wnd->draw(paredDer);
 
-    RectangleShape base(Vector2f(8.f, 2.f));
-    base.setFillColor(Color(128, 128, 128));
-
-    base.setPosition(2.5f, 95.5f);
-    wnd->draw(base);
-
-    pie =  RectangleShape (Vector2f(1.5f, 7.f));
-    pie.setFillColor(Color(128, 128, 128));
-
-    float pieX = base.getPosition().x + (base.getSize().x / 2.f) - (pie.getSize().x / 2.f);
-    float pieY = base.getPosition().y - pie.getSize().y;
-    pie.setPosition(pieX, pieY);
-
-    wnd->draw(pie);
+    canon->dibujar();
 
 }
 
-//metodos para ahorrar codigo
-b2Vec2 RotarYDesplazar(b2Vec2 base, b2Vec2 offset, float angulo) {
-    float cosA = cos(angulo);
-    float sinA = sin(angulo);
-    b2Vec2 rotado(
-        offset.x * cosA - offset.y * sinA,
-        offset.x * sinA + offset.y * cosA
-    );
-    return base + rotado;
-}
-
-void ConectarDistance(b2World* world, b2Body* bodyA, b2Body* bodyB, b2Vec2 offsetA, b2Vec2 offsetB, float angulo) {
-    b2Vec2 anchorA = RotarYDesplazar(bodyA->GetWorldCenter(), offsetA, angulo);
-    b2Vec2 anchorB = RotarYDesplazar(bodyB->GetWorldCenter(), offsetB, angulo);
-
-    b2DistanceJointDef jointDef;
-    jointDef.bodyA = bodyA;
-    jointDef.bodyB = bodyB;
-    jointDef.localAnchorA = bodyA->GetLocalPoint(anchorA);
-    jointDef.localAnchorB = bodyB->GetLocalPoint(anchorB);
-    jointDef.length = (anchorA - anchorB).Length();
-    jointDef.collideConnected = true;
-
-    b2LinearStiffness(jointDef.stiffness, jointDef.damping, 3.0f, 0.7f, bodyA, bodyB);
-
-    world->CreateJoint(&jointDef);
-}
-
-std::vector<b2Body*> CrearRagdoll(b2World* world, b2Vec2 posicion, float angulo, b2Vec2 fuerzaInicial){
-    std::vector<b2Body*> partes;
-
-    // Creo Bodys
-    b2Body* torso = Box2DHelper::CreateRectangularDynamicBody(world, 2.5f, 4.0f, 0.2f, 0.2f, 0.0f);
-    b2Body* cabeza = Box2DHelper::CreateRectangularDynamicBody(world, 1.5f, 1.5f, 0.3f, 0.2f, 0.0f);
-    b2Body* brazoIzq = Box2DHelper::CreateRectangularDynamicBody(world, 1.0f, 3.0f, 0.3f, 0.2f, 0.0f);
-    b2Body* brazoDer = Box2DHelper::CreateRectangularDynamicBody(world, 1.0f, 3.0f, 0.3f, 0.2f, 0.0f);
-    b2Body* piernaIzq = Box2DHelper::CreateRectangularDynamicBody(world, 1.0f, 5.0f, 0.3f, 0.2f, 0.0f);
-    b2Body* piernaDer = Box2DHelper::CreateRectangularDynamicBody(world, 1.0f, 5.0f, 0.3f, 0.2f, 0.0f);
-
-    // Partes relativas al torso
-    torso->SetTransform(posicion, angulo);
-    cabeza->SetTransform(RotarYDesplazar(posicion, b2Vec2(0, -2.75f), angulo), angulo);
-    brazoIzq->SetTransform(RotarYDesplazar(posicion, b2Vec2(-1.75f, -0.5f), angulo), angulo);
-    brazoDer->SetTransform(RotarYDesplazar(posicion, b2Vec2(1.75f, -0.5f), angulo), angulo);
-    piernaIzq->SetTransform(RotarYDesplazar(posicion, b2Vec2(-1.0f, 4.5f), angulo), angulo);
-    piernaDer->SetTransform(RotarYDesplazar(posicion, b2Vec2(1.0f, 4.5f), angulo), angulo);
-
-    // Conectar articulaciones
-    ConectarDistance(world, cabeza, torso, b2Vec2(0, 0.75f), b2Vec2(0, -2.0f), angulo);
-    ConectarDistance(world, brazoIzq, torso, b2Vec2(0, -1.5f), b2Vec2(-1.25f, -2.0f), angulo);
-    ConectarDistance(world, brazoDer, torso, b2Vec2(0, -1.5f), b2Vec2(1.25f, -2.0f), angulo);
-    ConectarDistance(world, piernaIzq, torso, b2Vec2(0.0f, -2.5f), b2Vec2(-1.0f, 2.0f), angulo);
-    ConectarDistance(world, piernaDer, torso, b2Vec2(0.0f, -2.5f), b2Vec2(1.0f, 2.0f), angulo);
-
-    // Aplicar fuerza
-    torso->ApplyLinearImpulseToCenter(fuerzaInicial, true);
-
-    partes = { cabeza, torso, brazoIzq, brazoDer, piernaIzq, piernaDer };
-
-    return partes;
-}
 
 void Game::DoEvents()
 {
-    Vector2i mousePosPixel = Mouse::getPosition(*wnd);
-    Vector2f mouseWorld = wnd->mapPixelToCoords(mousePosPixel);
-
-    b2Vec2 pivotPos(pie.getPosition().x + pie.getSize().x / 2.f, pie.getPosition().y);
-
-    float dx = mouseWorld.x - pivotPos.x;
-    float dy = mouseWorld.y - pivotPos.y;
-
-    float angle = atan2(dy, dx); 
-
-    b2Vec2 offsetCanon(cos(angle) * 4.f, sin(angle) * 4.0f);
-    b2Vec2 posCanon = pivotPos + offsetCanon;
-
-    canonBody->SetTransform(posCanon, angle);
-
-    // Rotar pivot
-    b2Vec2 offset(cos(angle) * 6.0f, sin(angle) * 6.0f);
-
-    Vector2f respawnPos = Vector2f(canonBody->GetPosition().x + offset.x, canonBody->GetPosition().y + offset.y);
-
+ 
     Event evt;
     while (wnd->pollEvent(evt))
     {
@@ -171,28 +92,8 @@ void Game::DoEvents()
             break;
         case Event::MouseButtonPressed:
             if (evt.mouseButton.button == Mouse::Left) {
-
-                float distancia = std::sqrt(dx * dx + dy * dy);
-                float fuerza = std::min(distancia * 12.0f, 1550.0f);
-                b2Vec2 direccion(std::cos(angle) * fuerza, std::sin(angle) * fuerza);
-
-                // Obtener la posición del spawn para crear el ragdoll
-                b2Vec2 offset2(cos(angle) * 2.0f, sin(angle) * 2.0f);
-                b2Vec2 spawnPos(respawnPos.x + offset2.x, respawnPos.y + offset2.y);
-
-                //limito los ragdoll (como el juego de referencia)
-                if (ragdollsActivos.size() >= 5)
-                {
-                    for (b2Body* body : ragdollsActivos.front()) {
-                        phyWorld->DestroyBody(body);
-                    }
-                    ragdollsActivos.pop_front();
-                }
-
-                // Crear el ragdoll
-                std::vector<b2Body*> ragdoll = CrearRagdoll(phyWorld, spawnPos, angle, direccion);
-                ragdollsActivos.push_back(ragdoll);
-
+                Ragdoll nuevo = canon->disparar(phyWorld, 1550.0f, 5, ragdollsActivos);
+                ragdollsActivos.push_back(nuevo);
             }
         }
     }    
@@ -236,8 +137,7 @@ void Game::InitPhysics()
     paredDerBody->SetTransform(b2Vec2(99.0f, 50.0f), 0.0f);
     paredDerBody->SetTransform(b2Vec2(99.0f, 50.0f), 0.0f);
 
-    // Crear canon
-    canonBody = Box2DHelper::Box2DHelper::CreateRectangularKinematicBody(phyWorld, 12, 4);
+
 
     //objetos para colisionar
     b2Body* piso1 = Box2DHelper::CreateRectangularStaticBody(phyWorld, 15, 2);

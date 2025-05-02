@@ -3,19 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Tp 1 - MAVII\\Build\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{96C674D7-9E95-4F51-966C-1A0545981942}|Box2dEmptyApp.vcxproj|C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Tp 1 - MAVII\\Src\\Canon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96C674D7-9E95-4F51-966C-1A0545981942}|Box2dEmptyApp.vcxproj|C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Tp 1 - MAVII\\Src\\Canon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{96C674D7-9E95-4F51-966C-1A0545981942}|Box2dEmptyApp.vcxproj|C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Tp 1 - MAVII\\Src\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Unidad 4 - MAVII\\Src\\Box2dEmptyApp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{96C674D7-9E95-4F51-966C-1A0545981942}|Box2dEmptyApp.vcxproj|C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Tp 1 - MAVII\\Src\\Ragdoll.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Unidad 4 - MAVII\\Src\\SFMLRenderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{96C674D7-9E95-4F51-966C-1A0545981942}|Box2dEmptyApp.vcxproj|C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Tp 1 - MAVII\\Src\\Ragdoll.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Unidad 4 - MAVII\\Src\\Box2DHelper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Unidad 4 - MAVII\\Src\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{96C674D7-9E95-4F51-966C-1A0545981942}|Box2dEmptyApp.vcxproj|C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Tp 1 - MAVII\\Src\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,67 +28,85 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Game.cpp",
-              "DocumentMoniker": "C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Tp 1 - MAVII\\Src\\Game.cpp",
-              "RelativeDocumentMoniker": "..\\Src\\Game.cpp",
-              "ToolTip": "C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Tp 1 - MAVII\\Src\\Game.cpp",
-              "RelativeToolTip": "..\\Src\\Game.cpp",
-              "ViewState": "AgIAAIoAAAAAAAAAAAASwJoAAAAtAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Ragdoll.cpp",
+              "DocumentMoniker": "C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Tp 1 - MAVII\\Src\\Ragdoll.cpp",
+              "RelativeDocumentMoniker": "..\\Src\\Ragdoll.cpp",
+              "ToolTip": "C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Tp 1 - MAVII\\Src\\Ragdoll.cpp",
+              "RelativeToolTip": "..\\Src\\Ragdoll.cpp",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACoAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-24T21:44:11.857Z",
+              "WhenOpened": "2025-05-02T16:40:25.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Ragdoll.h",
+              "DocumentMoniker": "C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Tp 1 - MAVII\\Src\\Ragdoll.h",
+              "RelativeDocumentMoniker": "..\\Src\\Ragdoll.h",
+              "ToolTip": "C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Tp 1 - MAVII\\Src\\Ragdoll.h",
+              "RelativeToolTip": "..\\Src\\Ragdoll.h",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-02T16:11:56.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Game.h",
+              "DocumentMoniker": "C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Tp 1 - MAVII\\Src\\Game.h",
+              "RelativeDocumentMoniker": "..\\Src\\Game.h",
+              "ToolTip": "C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Tp 1 - MAVII\\Src\\Game.h",
+              "RelativeToolTip": "..\\Src\\Game.h",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-02T15:52:12.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Canon.cpp",
+              "DocumentMoniker": "C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Tp 1 - MAVII\\Src\\Canon.cpp",
+              "RelativeDocumentMoniker": "..\\Src\\Canon.cpp",
+              "ToolTip": "C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Tp 1 - MAVII\\Src\\Canon.cpp",
+              "RelativeToolTip": "..\\Src\\Canon.cpp",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-02T15:30:48.73Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Box2dEmptyApp.cpp",
-              "DocumentMoniker": "C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Unidad 4 - MAVII\\Src\\Box2dEmptyApp.cpp",
-              "RelativeDocumentMoniker": "..\\..\\Unidad 4 - MAVII\\Src\\Box2dEmptyApp.cpp",
-              "ToolTip": "C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Unidad 4 - MAVII\\Src\\Box2dEmptyApp.cpp",
-              "RelativeToolTip": "..\\..\\Unidad 4 - MAVII\\Src\\Box2dEmptyApp.cpp",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-22T16:50:05.055Z"
+              "Title": "Canon.h",
+              "DocumentMoniker": "C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Tp 1 - MAVII\\Src\\Canon.h",
+              "RelativeDocumentMoniker": "..\\Src\\Canon.h",
+              "ToolTip": "C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Tp 1 - MAVII\\Src\\Canon.h",
+              "RelativeToolTip": "..\\Src\\Canon.h",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-02T15:46:58.529Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "SFMLRenderer.h",
-              "DocumentMoniker": "C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Unidad 4 - MAVII\\Src\\SFMLRenderer.h",
-              "RelativeDocumentMoniker": "..\\..\\Unidad 4 - MAVII\\Src\\SFMLRenderer.h",
-              "ToolTip": "C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Unidad 4 - MAVII\\Src\\SFMLRenderer.h",
-              "RelativeToolTip": "..\\..\\Unidad 4 - MAVII\\Src\\SFMLRenderer.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-22T16:49:58.357Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Box2DHelper.h",
-              "DocumentMoniker": "C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Unidad 4 - MAVII\\Src\\Box2DHelper.h",
-              "RelativeDocumentMoniker": "..\\..\\Unidad 4 - MAVII\\Src\\Box2DHelper.h",
-              "ToolTip": "C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Unidad 4 - MAVII\\Src\\Box2DHelper.h",
-              "RelativeToolTip": "..\\..\\Unidad 4 - MAVII\\Src\\Box2DHelper.h",
-              "ViewState": "AgIAAEsAAAAAAAAAAAASwFAAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-22T16:40:39.15Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Game.h",
-              "DocumentMoniker": "C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Unidad 4 - MAVII\\Src\\Game.h",
-              "RelativeDocumentMoniker": "..\\..\\Unidad 4 - MAVII\\Src\\Game.h",
-              "ToolTip": "C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Unidad 4 - MAVII\\Src\\Game.h",
-              "RelativeToolTip": "..\\..\\Unidad 4 - MAVII\\Src\\Game.h",
-              "ViewState": "AgIAAAYAAAAAAAAAAAASwB0AAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-22T16:39:11.122Z"
+              "Title": "Game.cpp",
+              "DocumentMoniker": "C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Tp 1 - MAVII\\Src\\Game.cpp",
+              "RelativeDocumentMoniker": "..\\Src\\Game.cpp",
+              "ToolTip": "C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Tp 1 - MAVII\\Src\\Game.cpp",
+              "RelativeToolTip": "..\\Src\\Game.cpp",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAABwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-24T21:44:11.857Z",
+              "EditorCaption": ""
             }
           ]
         }

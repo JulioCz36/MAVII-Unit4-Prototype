@@ -3,6 +3,8 @@
 #include "SFMLRenderer.h"
 #include <list>
 #include <deque>
+#include "Canon.h"
+#include "Ragdoll.h"
 
 using namespace sf;
 class Game{
@@ -23,12 +25,10 @@ private:
 
 	//Bodys
 	b2Body* sueloBody;b2Body* techoBody; b2Body* paredIzqBody; b2Body* paredDerBody;
-	b2Body* canonBody;
 
-	RectangleShape pie;
+	Canon* canon; 
 
-	//ayudita de chatGPT
-	std::deque<std::vector<b2Body*>> ragdollsActivos;
+	std::deque<Ragdoll> ragdollsActivos;
 
 public:
 
