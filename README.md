@@ -2,6 +2,10 @@
 
 Mini-game developed as part of a practical assignment for the course *MAVII*.
 
+## 🕹️ Gameplay
+
+[![Ver video del gameplay](https://img.youtube.com/vi/_0x_5dNNGG8/0.jpg)](https://youtu.be/_0x_5dNNGG8)
+
 ## 🎯 Game objective
 
 Create the first prototype of a game where the main mechanic is **shooting ragdolls from a cannon** located in the bottom-left corner of the screen.
@@ -26,7 +30,7 @@ Inspired by: [Ragdoll Cannon 3 on Kongregate](http://www.kongregate.com/games/jo
 
 ## 📦 Download
 
-[Download on itch.io](https://juliocz36.itch.io/MY_PROJECT_URL)
+[Download on itch.io](https://juliocz36.itch.io/ragdoll-cannon-prototype)
 
 ---
 
