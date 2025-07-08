@@ -4,7 +4,7 @@ Mini-game developed as part of a practical assignment for the course *MAVII*.
 
 ## 🕹️ Gameplay
 
-[![Ver video del gameplay](https://img.youtube.com/vi/_0x_5dNNGG8/0.jpg)](https://www.youtube.com/watch?v=_0x_5dNNGG8)
+[![Ver video del gameplay](https://img.youtube.com/vi/abc123DEF45/0.jpg)](https://www.youtube.com/watch?v=_0x_5dNNGG8)
 
 ## 🎯 Game objective
 
