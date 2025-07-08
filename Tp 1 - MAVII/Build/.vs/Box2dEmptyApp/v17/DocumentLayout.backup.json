@@ -3,6 +3,9 @@
   "WorkspaceRootPath": "C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Tp 1 - MAVII\\Build\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{96C674D7-9E95-4F51-966C-1A0545981942}|Box2dEmptyApp.vcxproj|C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Tp 1 - MAVII\\Src\\Box2dEmptyApp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{96C674D7-9E95-4F51-966C-1A0545981942}|Box2dEmptyApp.vcxproj|C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Tp 1 - MAVII\\Src\\Canon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
@@ -28,11 +31,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "Box2dEmptyApp.cpp",
+              "DocumentMoniker": "C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Tp 1 - MAVII\\Src\\Box2dEmptyApp.cpp",
+              "RelativeDocumentMoniker": "..\\Src\\Box2dEmptyApp.cpp",
+              "ToolTip": "C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Tp 1 - MAVII\\Src\\Box2dEmptyApp.cpp",
+              "RelativeToolTip": "..\\Src\\Box2dEmptyApp.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-07-08T21:50:29.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Ragdoll.cpp",
               "DocumentMoniker": "C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Tp 1 - MAVII\\Src\\Ragdoll.cpp",
               "RelativeDocumentMoniker": "..\\Src\\Ragdoll.cpp",
@@ -40,12 +56,11 @@
               "RelativeToolTip": "..\\Src\\Ragdoll.cpp",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAACoAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-02T16:40:25.311Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-02T16:40:25.311Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Ragdoll.h",
               "DocumentMoniker": "C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Tp 1 - MAVII\\Src\\Ragdoll.h",
               "RelativeDocumentMoniker": "..\\Src\\Ragdoll.h",
@@ -53,12 +68,11 @@
               "RelativeToolTip": "..\\Src\\Ragdoll.h",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-02T16:11:56.925Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-02T16:11:56.925Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Game.h",
               "DocumentMoniker": "C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Tp 1 - MAVII\\Src\\Game.h",
               "RelativeDocumentMoniker": "..\\Src\\Game.h",
@@ -66,25 +80,23 @@
               "RelativeToolTip": "..\\Src\\Game.h",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-02T15:52:12.528Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-02T15:52:12.528Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Canon.cpp",
               "DocumentMoniker": "C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Tp 1 - MAVII\\Src\\Canon.cpp",
               "RelativeDocumentMoniker": "..\\Src\\Canon.cpp",
               "ToolTip": "C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Tp 1 - MAVII\\Src\\Canon.cpp",
               "RelativeToolTip": "..\\Src\\Canon.cpp",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAADsAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-02T15:30:48.73Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-02T15:30:48.73Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Canon.h",
               "DocumentMoniker": "C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Tp 1 - MAVII\\Src\\Canon.h",
               "RelativeDocumentMoniker": "..\\Src\\Canon.h",
@@ -92,12 +104,11 @@
               "RelativeToolTip": "..\\Src\\Canon.h",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-02T15:46:58.529Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-02T15:46:58.529Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Game.cpp",
               "DocumentMoniker": "C:\\Users\\JulioCZ\\Documents\\2 - Cuatri_1\\MAVII\\U4\\TP Unidad 4\\Tp 1 - MAVII\\Src\\Game.cpp",
               "RelativeDocumentMoniker": "..\\Src\\Game.cpp",
@@ -105,8 +116,7 @@
               "RelativeToolTip": "..\\Src\\Game.cpp",
               "ViewState": "AgIAABsAAAAAAAAAAAAAABwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-24T21:44:11.857Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-24T21:44:11.857Z"
             }
           ]
         }

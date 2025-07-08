@@ -1,37 +1,36 @@
-# TP Unidad 4 - MAVII 🎮
+# Practical Work Unit 4 - MAVII 🎮
 
-Mini juego desarrollado como trabajo práctico para la materia de MAVII.
+Mini-game developed as part of a practical assignment for the course *MAVII*.
 
-## 🎯 Objetivo del juego
+## 🎯 Game objective
 
-Llevar adelante los primeros pasos tendientes a desarrollar un videojuego cuya
-mecánica principal consista en disparar ragdolls desde un cañón que se encuentra en la esquina
-inferior izquierda de la pantalla.
+Create the first prototype of a game where the main mechanic is **shooting ragdolls from a cannon** located in the bottom-left corner of the screen.
 
-Referencia http://www.kongregate.com/games/johnny_k/ragdoll-cannon-3
+Inspired by: [Ragdoll Cannon 3 on Kongregate](http://www.kongregate.com/games/johnny_k/ragdoll-cannon-3)
 
-## ⚙️ Tecnologías usadas
+## ⚙️ Technologies used
 
 - C++
 - SFML
 - Box2D
 
-## 🧠 Mecánicas implementadas
+## 🧠 Implemented mechanics
 
-- Disparo con ángulo y fuerza según el mouse
-- Generación de ragdolls con física realista
-- Obstáculos estáticos (pisos flotantes)
-- Obstáculos dinámicos (barriles y péndulo)
-- Límite de 5 ragdolls simultáneos
+- Shooting ragdolls with angle and force controlled by mouse
+- Realistic ragdoll physics
+- Static obstacles (floating platforms)
+- Dynamic obstacles (barrels and a pendulum)
+- Limit of 5 simultaneous ragdolls
 
-## ▶️ Cómo ejecutar
+---
 
-1. Clonar el repositorio
-2. Compilar con CMake o tu entorno preferido
-3. Asegurarse de tener SFML y Box2D correctamente linkeados
+## 📦 Download
 
-## 👨‍💻 Autor
+[Download on itch.io](https://juliocz36.itch.io/MY_PROJECT_URL)
+
+---
+
+## 👨‍💻 Author
 
 **JulioCZ**  
-1° Cuatrimestre – Año 2025  
-Tecnicatura en Diseño y Programación de Videojuegos
+1° Cuatrimestre – Technical Degree in Video Game Design and Programming
