@@ -1,4 +1,4 @@
-# Practical Work Unit 4 - MAVII 🎮
+#🎮 Ragdoll Cannon Prototype | MAVII
 
 Mini-game developed as part of a practical assignment for the course *MAVII*.
 
